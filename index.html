@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Movie Search App</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="app">
+			<header>
+				<h1>Movie Search App</h1>
+				<div class="controls">
+					<input id="q" type="text" placeholder="Search movies by title (e.g. Inception)" aria-label="Search movies" />
+					<button id="searchBtn">Search</button>
+					<div class="options">
+						<label style="display:flex;align-items:center;gap:8px"><input id="useApi" type="checkbox" /> Use OMDb API</label>
+						<input id="apiKey" class="api-key" placeholder="OMDb API key (optional)" />
+					</div>
+				</div>
+			</header>
+			<main>
+				<div id="status" class="empty">Type a movie title and press Search or Enter.</div>
+				<div id="results" class="results" aria-live="polite"></div>
+			</main>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
